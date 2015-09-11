@@ -2,16 +2,16 @@
 
 namespace AsyncWcfLib
 {
-	[ServiceContract]
-	public interface IService
-	{
-		[OperationContract]
-		bool ShouldDoWork(int rnd);
+    [ServiceContract]
+    public interface IService
+    {
+        [OperationContract]
+        bool ShouldDoWork(int rnd);
 
-		[OperationContract]
-		bool DoWork(byte[] work);
+        [OperationContract]
+        bool DoWork(byte[] work);
 
-		[OperationContract]
-		bool WorkDone(bool success);
-	}
+        [OperationContract]
+        bool WorkDone(bool success);
+    }
 }
